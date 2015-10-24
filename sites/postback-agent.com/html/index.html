@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Postback Agent Test</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+
+var postData = {
+          "endpoint":{
+            "method":"POST",
+            "url":"http://post-receiver.com/data?key={key}&value={value}&foo={bar}"
+          },
+          "data":[
+            {
+              "key":"Azureus",
+              "value":"Dendrobates"
+            },
+            {
+              "key":"Phyllobates",
+              "value":"Terribilis"
+            }
+          ]
+        };
+
+$(document).ready(function(){
+        $.post( "ingest.php", postData )
+                .done(function( data ) {
+                        var dateNow = new Date();
+                        $("#divResponse").append("<p>Posted Data:" + JSON.stringify(postData) + "<br />Sent at: ["+dateNow.toLocaleString()+"]<br />"+data.replace("\n","<br />") + "</p>");
+                });
+});
+</script>
+</head>
+<body>
+<h2>Response:</h2>
+<div id="divResponse"></div>
+
+</body>
+</html>
+

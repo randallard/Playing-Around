@@ -1,3 +1,12 @@
 Resources 
 
 List resources used
+
+Nginx Install on Ubuntu 14.04 [https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-14-04-lts]
+
+Setting up Ubuntu 14.04 [https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04]
+
+Everything seems to point to Nginx holding up better under a load
+
+WikiVS [https://www.wikivs.com/wiki/Apache_vs_nginx]
+Apache vs Nginx: Practical Considerations [https://www.digitalocean.com/community/tutorials/apache-vs-nginx-practical-considerations]
